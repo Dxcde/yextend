@@ -39,7 +39,7 @@ AC_CHECK_HEADERS([stdint.h stdlib.h string.h syslog.h unistd.h uuid.h])
 
 # Checks for installed progs
 AC_CHECK_PROG(PDFTOTEXT,[pdftotext],[pdftotext],[no])
-test "$PDFTOTEXT" == "no" && AC_MSG_ERROR([Required program 'pdftotext' not found.])
+test "$PDFTOTEXT" == "no" && AC_MSG_ERROR([Required program 'pdftotext' not found. Try apt-get install poppler-utils])
 
 # Checks for typedefs, structures, and compiler characteristics
 AC_CHECK_HEADER_STDBOOL
